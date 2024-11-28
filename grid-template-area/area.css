@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #7adfff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    min-height: 800px;
+    margin: 52px auto;
+    padding: 0 16px;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 20px;
+    grid-template-areas: 
+      "column1 column1 column1 column3"
+      "column2 column2 column2 column3"
+      "column2 column2 column2 column3";
+  }
+  
+  .box1 {
+    grid-area: column1;
+    background-color: red;
+  }
+  
+  .box2 {
+    grid-area: column2;
+    background-color: blue;
+  }
+  
+  .box3 {
+    grid-area: column3;
+    background-color: green;
+  }
+  
+  /* Media Queries */
+  
+  /* For Desktop */
+  @media screen and (min-width: 1201px) {
+  }
+  
+  /* For mobile */
+  @media screen and (max-width: 450px) {
+    .grid{
+      grid-template-areas: 
+      "column1"
+      "column1"
+      "column2"
+      "column2"
+      "column2"
+      "column2"
+      "column3"
+      "column3"
+      "column3";
+    }
+  }
+  
+  /* For Tablet */
+  @media screen and (min-width: 451px) and (max-width: 1200px) {
+  
+  
+  }
+  
