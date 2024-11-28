@@ -7,18 +7,23 @@
   body {
     background-color:#f1e26b
   }
+
+
   .container {
-    width: 800px;
+   max-width: 1200px;
     height: 800px;
     background-color: black;
     margin: 80px auto;
   }
   
+
   .box {
     width: 600px;
     height: 200px;
   }
   
+
+
   .box-container {
     display: flex;
   }
@@ -48,3 +53,20 @@
     background-color: #ec9dfc;
   }
   
+/* Adding media queries */
+
+ @media screen and (width > 1200px){
+  .container{
+    margin: 80px auto;
+  }
+ }
+ @media screen and (width > 450px){
+  .container{
+    margin: 24px 16px;
+  }
+ }
+ @media screen and (width < 1200px) and  ( width > 450px){
+  .container{
+    margin: 40px 24px;
+  }
+ }
