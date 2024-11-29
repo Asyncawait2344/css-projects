@@ -1,0 +1,157 @@
+:root {
+    --body: #a70000;
+    --nav: #5e0808;
+    --red: #ff0000;
+  
+    --purple: #800080;
+    --green: #008000;
+    --yellow: #ffff00;
+    --blue: #0000ff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--body);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  nav {
+    background-color: var(--nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 93px;
+    margin-right: 20px;
+    gap: 40px;
+  }
+  
+  .shape {
+    background: pink;
+    height: 64px;
+    width: 600px;
+    border-radius: 50px;
+    margin-left: 20px;
+  }
+  
+  .circle1 {
+    background: var(--purple);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  
+  .circle2 {
+    background: var(--yellow);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle3 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle4 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle5 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle6 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle7 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle8 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle9 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle10 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  .circle11 {
+    background: var(--red);
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+  }
+  
+  /* Media Queries */
+  
+  /* For Desktop */
+  @media screen and (min-width: 1201px) {
+  }
+  
+  /* For Mobile */
+  @media screen and (max-width: 450px) {
+    .circle5 .circle6,
+    .circle7,
+    .circle8,
+    .circle9,
+    .circle10,
+    .circle11,
+    .shape {
+      display: none;
+    }
+  
+    .circle1,
+    .circle2,
+    .circle3,
+    .circle4 {
+      margin: auto;
+      min-width: 30px;
+      min-height: 30px;
+    }
+  }
+  /* For Tablet */
+  @media screen and (min-width: 451px) and (max-width: 1200px) {
+    .circle5,
+    .circle6,
+    .circle7,
+    .circle8,
+    .circle9 .shape {
+      display: none;
+    }
+  }
+  
